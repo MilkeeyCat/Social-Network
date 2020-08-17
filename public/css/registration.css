@@ -1,0 +1,318 @@
+/*
+    Обнуление стандартных стилей
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+img {
+    vertical-align: top;
+}
+
+div,
+a,
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Raleway', sans-serif;
+    font-size: inherit;
+    font-weight: 400;
+}
+
+
+/* 
+    Стили страницы
+*/
+
+body {
+    background-color: #242424;
+}
+
+header {
+    background: url(../img/bg02.png) no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 1212px;
+    margin: 0 auto;
+}
+
+.nav {
+    background: rgb(17, 117, 195);
+    background: linear-gradient(35deg, rgba(17, 117, 195, 1) 0%, rgba(92, 235, 251, 1) 100%);
+    width: 100%;
+    height: 50px;
+}
+
+.nav__item {
+    display: flex;
+    align-items: center;
+}
+
+.nav__logo {
+    padding-top: 0px;
+    margin-right: 874px;
+}
+
+.nav__menu {
+    display: flex;
+}
+
+.nav__top {
+    margin-top: 15px;
+}
+
+.nav__link {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav__link_active {
+    color: white;
+    margin-left: 57px;
+    background-color: #242424;
+    padding: 15px 30px;
+}
+
+.second-container {
+    width: 1085px;
+    margin: 0 auto;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+input {
+    padding: 12px 15px;
+    margin-bottom: 24px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #949494;
+    border-radius: 5px;
+}
+
+.form__title {
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.form__subtitle {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.btn-and-have-account {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+    margin-bottom: 135px;
+}
+
+.btn {
+    background: linear-gradient(119.27deg, #0B6ABE -6.28%, #5CEBFB -6.27%, #299BD5 39.55%, #157AC6 99.84%);
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 23px;
+    font-weight: 600;
+    color: white;
+    margin-right: 20px;
+}
+
+.not-have-account__text {
+    font-size: 16px;
+    font-weight: bold;
+    width: 160px;
+    color: white;
+    line-height: 1.3;
+}
+
+.login__link {
+    color: #55B2FE;
+}
+
+.login__link:hover {
+    border-bottom: 2px solid #55B2FE;
+    padding-bottom: 2px;
+}
+
+.form {
+    margin-top: 75px;
+}
+
+.name-second-name {
+    display: flex;
+}
+
+.input__name {
+    width: 175px;
+    margin-right: 20px;
+}
+
+.input__second-name {
+    width: 205px;
+}
+
+
+/*  */
+
+.bottom-menu {
+    display: flex;
+    margin: 0 auto;
+}
+
+.bottom-menu__item {
+    color: white;
+    font-size: 14px;
+}
+
+.item01 {
+    margin-right: 30px;
+}
+
+.select-title {
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+select {
+    padding: 10px 5px 10px 10px;
+    border-radius: 3px;
+}
+
+.first-text {
+    font-size: 14px;
+    color: #696969;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.select_block {
+    margin-bottom: 25px;
+}
+
+.gender * {
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.gender__inner {
+    display: flex;
+    margin: 24px 0;
+}
+
+.gender__item {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.gender .gender__item:not(:first-child) {
+    margin-left: 30px;
+}
+
+.gender__item input {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.gender__item input:checked {
+    border: 1px solid rgba(0, 0, 0, 0);
+    background: url("/public/img/checkbox_active.png") no-repeat center;
+}
+
+.gender__item span {
+    margin-left: 10px;
+}

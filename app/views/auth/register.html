@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ static }}/css/registration.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Raleway:wght@300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <script src="{{ static }}/js/registration.js" defer async></script>
+    <title>Вход - Logotype</title>
+</head>
+
+<body>
+<header>
+    <nav class="nav">
+        <div class="container">
+            <div class="nav__item">
+                <div class="nav__logo">
+                    <a href="/">
+                        <img src="{{ static }}/img/logo.png" alt="Логотип">
+                    </a>
+                </div>
+                <div class="nav__menu">
+                    <a href="/login" class="nav__link nav__top">
+                        Вход
+                    </a>
+                    <div class="nav__link nav__link_active">
+                        Регстрация
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- New Section-->
+    <form action="#">
+        <div class="second-container">
+            <div class="form">
+                <h2 class="form__title">Регстрация</h2>
+                <p class="form__subtitle">
+                    Введите ниже свои данные чтобы стать пользователем Logotype
+                </p>
+                <div class="form-input">
+                    <div class="name-second-name">
+                        <input type="text" name="firstName" placeholder="Имя" class="input input__name" required>
+                        <input type="text" name="lastName" placeholder="Фамилия" class="input input__second-name" required>
+                    </div>
+                    <input type="text" name="emailOrPassword" placeholder="Электронный адрес или номер телефона" class="input" required>
+                    <input type="password" name="password" placeholder="Придумайте надежный пароль" class="input"
+                           required>
+                </div>
+
+                <div class="select_body">
+                    <h2 class="select-title"> Укажите свой возраст </h2>
+                    <div class="select_block">
+                        <select class="first-text" aria-label="День" name="Дата" id="select-date">
+                            <option class="first-text" value="0">День</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="11">12</option>
+                            <option value="11">13</option>
+                            <option value="11">14</option>
+                            <option value="11">15</option>
+                            <option value="11">16</option>
+                            <option value="11">17</option>
+                            <option value="11">18</option>
+                            <option value="11">19</option>
+                            <option value="11">20</option>
+                            <option value="11">21</option>
+                            <option value="11">22</option>
+                            <option value="11">23</option>
+                            <option value="11">24</option>
+                            <option value="11">25</option>
+                            <option value="11">26</option>
+                            <option value="11">27</option>
+                            <option value="11">28</option>
+                            <option value="11">29</option>
+                            <option value="11">30</option>
+                            <option value="11">31</option>
+                        </select>
+                        <select class="first-text" aria-label="Месяц" name="" id="select-month">
+                            <option value="0">Месяц</option>
+                            <option value="1">Январь</option>
+                            <option value="2">Февраль</option>
+                            <option value="3">Март</option>
+                            <option value="4">Апрель</option>
+                            <option value="5">Май</option>
+                            <option value="6">Июнь</option>
+                            <option value="7">Июль</option>
+                            <option value="8">Август</option>
+                            <option value="9">Сентябрь</option>
+                            <option value="10">Октябрь</option>
+                            <option value="11">Ноябрь</option>
+                            <option value="11">Декабрь</option>
+                        </select>
+                        <select class="first-text" aria-label="Год" name="birthday_year" id="select-year">
+                            <option value="0">Год</option>
+                            <option value="1">2020</option>
+                            <option value="2">2019</option>
+                            <option value="3">2018</option>
+                            <option value="4">2017</option>
+                            <option value="5">2016</option>
+                            <option value="6">2015</option>
+                            <option value="7">2014</option>
+                            <option value="8">2013</option>
+                            <option value="9">2012</option>
+                            <option value="10">2011</option>
+                            <option value="11">2010</option>
+                            <option value="11">2009</option>
+                            <option value="11">2008</option>
+                            <option value="11">2007</option>
+                            <option value="11">2006</option>
+                            <option value="11">2005</option>
+                            <option value="11">2004</option>
+                            <option value="11">2003</option>
+                            <option value="11">2002</option>
+                            <option value="11">2001</option>
+                            <option value="11">2000</option>
+                            <option value="11">1999</option>
+                            <option value="11">1998</option>
+                            <option value="11">1997</option>
+                            <option value="11">1996</option>
+                            <option value="11">1995</option>
+                            <option value="11">1994</option>
+                            <option value="11">1993</option>
+                            <option value="11">1992</option>
+                            <option value="11">1991</option>
+                            <option value="11">1990</option>
+                            <option value="11">1989</option>
+                            <option value="11">1988</option>
+                            <option value="11">1987</option>
+                            <option value="11">1986</option>
+                            <option value="11">1985</option>
+                            <option value="11">1984</option>
+                            <option value="11">1983</option>
+                            <option value="11">1982</option>
+                            <option value="11">1981</option>
+                            <option value="11">1980</option>
+                            <option value="11">1979</option>
+                            <option value="11">1978</option>
+                            <option value="11">1977</option>
+                            <option value="11">1976</option>
+                            <option value="11">1975</option>
+                            <option value="11">1974</option>
+                            <option value="11">1973</option>
+                            <option value="11">1972</option>
+                            <option value="11">1971</option>
+                            <option value="11">1970</option>
+                            <option value="11">1969</option>
+                            <option value="11">1968</option>
+                            <option value="11">1967</option>
+                            <option value="11">1966</option>
+                            <option value="11">1965</option>
+                            <option value="11">1964</option>
+                            <option value="11">1963</option>
+                            <option value="11">1962</option>
+                            <option value="11">1961</option>
+                            <option value="11">1960</option>
+                            <option value="11">1959</option>
+                            <option value="11">1958</option>
+                            <option value="11">1957</option>
+                            <option value="11">1956</option>
+                            <option value="11">1955</option>
+                            <option value="11">1954</option>
+                            <option value="11">1953</option>
+                            <option value="11">1952</option>
+                            <option value="11">1951</option>
+                            <option value="11">1950</option>
+                            <option value="11">1949</option>
+                            <option value="11">1948</option>
+                            <option value="11">1947</option>
+                            <option value="11">1946</option>
+                            <option value="11">1945</option>
+                            <option value="11">1944</option>
+                            <option value="11">1943</option>
+                            <option value="11">1942</option>
+                            <option value="11">1941</option>
+                            <option value="11">1940</option>
+                            <option value="11">1939</option>
+                            <option value="11">1938</option>
+                            <option value="11">1937</option>
+                            <option value="11">1936</option>
+                            <option value="11">1935</option>
+                            <option value="11">1934</option>
+                            <option value="11">1933</option>
+                            <option value="11">1932</option>
+                            <option value="11">1931</option>
+                            <option value="11">1930</option>
+                            <option value="11">1929</option>
+                            <option value="11">1928</option>
+                            <option value="11">1927</option>
+                            <option value="11">1926</option>
+                            <option value="11">1925</option>
+                            <option value="11">1924</option>
+                            <option value="11">1923</option>
+                            <option value="11">1922</option>
+                            <option value="11">1921</option>
+                            <option value="11">1920</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="gender">
+                    <span class="select-title">Укажите свой пол</span>
+                    <div class="gender__inner">
+                        <div class="gender__item">
+                            <input type="radio" name="gender" value="male">
+                            <span>Мужской</span>
+                        </div>
+                        <div class="gender__item">
+                            <input type="radio" name="gender" value="female">
+                            <span>Женский</span>
+                        </div>
+                        <div class="gender__item">
+                            <input type="radio" name="gender" value="it">
+                            <span>Оно</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-and-have-account">
+                <button type="submit" class="btn">Регистрация</button>
+                <p class="not-have-account__text">
+                    <span>Уже есть аккаунт?</span> <a href="/login" class="login__link">Войти</a>
+                </p>
+            </div>
+        </div>
+    </form>
+    <div class="bottom-menu">
+        <a href="#" class="bottom-menu__item item01">О Нас</a>
+        <a href="#" class="bottom-menu__item item01">Политика Конфидециальности</a>
+        <a href="#" class="bottom-menu__item">Реклама</a>
+    </div>
+    </div>
+</header>
+</body>
+
+</html>

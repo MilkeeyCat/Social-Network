@@ -1,0 +1,147 @@
+*,
+ ::after,
+ ::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-style: normal;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(../img/bg01.jpg);
+    background-size: 100%;
+}
+
+.nav_bar {
+    width: 100%;
+    height: 52px;
+    padding: 0 75px;
+    background: linear-gradient(119.27deg, #0B6ABE -6.28%, #157AC6 5.68%, #299BD5 30.31%, #5CEBFB 90.97%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a:-webkit-any-link {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav_info {
+    /* О Нас */
+    font-weight: bolder;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.a_nav_info:hover {
+    transition: 2s;
+    color: #0B6ABE;
+}
+
+.main {
+    max-width: 630px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -40px;
+}
+
+button {
+    margin: 0 40px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.main_helo {
+    padding: 0 0 80px 0;
+    width: 100%;
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 150%;
+    /* or 54px */
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.button_login,
+.button_register {
+    width: 215px;
+    height: 61px;
+    background: linear-gradient(119.27deg, #0B6ABE -6.28%, #5CEBFB -6.27%, #299BD5 39.55%, #157AC6 99.84%);
+    border-radius: 5px;
+    border: none;
+    font-weight: 500;
+    color: white;
+    font-style: bold;
+    font-size: 26px;
+    line-height: 150%;
+    padding: 10px 77px;
+}
+
+.button_login {
+    margin-right: 30px;
+}
+
+.button_register {
+    padding-left: 30px;
+}
+
+.button_login:hover,
+.button_register:hover {
+    opacity: 0.98;
+    border: 1px solid white;
+}
+
+.footer {
+    width: 375px;
+    margin: 0 auto;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_info,
+.footer_pol_conf,
+.footer_ad {
+    margin: 0;
+    width: auto;
+    height: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    /* identical to box height, or 30px */
+}
+
+#footer_obj:after {
+    background-color: white;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+
+#footer_obj:hover:after,
+#footer_obj:focus:after {
+    width: 100%;
+}

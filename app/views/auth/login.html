@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ static }}/css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Вход - Logotype</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="container">
+                <div class="nav__item">
+                    <div class="nav__logo">
+                        <a href="inde.html">
+                            <img src="{{ static }}/img/logo.png" alt="Логотип">
+                        </a>
+                    </div>
+                    <div class="nav__menu">
+                        <div class="nav__link nav__link_active">
+                            Вход
+                        </div>
+                        <a href="/register" class="nav__link nav__top">
+                            Регстрация
+                         </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- New Section-->
+        <div class="second-container">
+            <div class="form">
+                <h2 class="form__title">Вход</h2>
+                <p class="form__subtitle">
+                    Введите ниже свои данные чтобы войти в свой аккаунт
+                </p>
+                <div class="form-input">
+                    <input type="email" type="tel" name="email" name="tel" placeholder="Электронный адрес или номер...	" class="input" required>
+                    <input type="password" name="password" placeholder="Пароль" class="input" required>
+                </div>
+                <div class="btn-and-have-account">
+                    <button type="submit" class="btn">Войти</button>
+                    <p class="have-account__text">
+                        <span>Еще не создали аккаунт?</span> <a href="/register" class="reg__link">Зарегестрируйтесь</a>
+                    </p>
+                </div>
+                <a href="password.html" class="forrgot-password">
+                    Я забыл свой пароль
+                </a>
+            </div>
+            <div class="bottom-menu">
+                <a href="# " class="bottom-menu__item item01">О Нас</a>
+                <a href="# " class="bottom-menu__item item01">Политика Конфидециальности</a>
+                <a href="# " class="bottom-menu__item">Реклама</a>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
